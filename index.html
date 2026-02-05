@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Selector RGB</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bg-light">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-dark bg-dark shadow">
+    <div class="container">
+        <span class="navbar-brand mb-0 h1">🎨 Selector Profesional RGB</span>
+    </div>
+</nav>
+
+<!-- CONTENIDO -->
+<div class="container my-5">
+
+    <div class="row g-4">
+
+        <!-- CARD CONTROLES -->
+        <div class="col-lg-6">
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-body p-4">
+
+                    <h4 class="card-title mb-4 text-center">
+                        Controles de Color
+                    </h4>
+
+                    <!-- Color Picker -->
+                    <label class="form-label fw-bold">Seleccionar color</label>
+                    <input type="color" class="form-control form-control-color mb-4"
+                           id="colorPicker" value="#000000">
+
+                    <!-- Sliders -->
+                    <label>Rojo: <span id="rValue">0</span></label>
+                    <input type="range" class="form-range slider-red" min="0" max="255" value="0" id="red">
+
+                    <label>Verde: <span id="gValue">0</span></label>
+                    <input type="range" class="form-range slider-green" min="0" max="255" value="0" id="green">
+
+                    <label>Azul: <span id="bValue">0</span></label>
+                    <input type="range" class="form-range slider-blue" min="0" max="255" value="0" id="blue">
+
+                    <hr>
+
+                    <!-- Inputs numéricos -->
+                    <h5 class="text-center">Entrada manual RGB</h5>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="number" class="form-control" id="redInput" placeholder="Rojo">
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="number" class="form-control" id="greenInput" placeholder="Verde">
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="number" class="form-control" id="blueInput" placeholder="Azul">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD RESULTADO -->
+        <div class="col-lg-6">
+            <div class="card shadow-lg border-0 rounded-4 text-center">
+                <div class="card-body p-4">
+
+                    <h4 class="card-title mb-4">
+                        Vista Previa del Color
+                    </h4>
+
+                    <div id="colorBox" class="color-box mb-4"></div>
+
+                    <h5>RGB</h5>
+                    <p id="rgbText" class="fw-bold fs-5">rgb(0,0,0)</p>
+
+                    <h5>HEX</h5>
+                    <p id="hexText" class="fw-bold fs-5">#000000</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">
+        Desarrollado por <strong>Gerardo Silva Escorza</strong> |
+        Ingeniería en Sistemas Computacionales
+    </p>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

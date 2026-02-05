@@ -1,0 +1,33 @@
+.color-box {
+    width: 260px;
+    height: 260px;
+    margin: auto;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+/* Sliders personalizados */
+
+.slider-red::-webkit-slider-thumb {
+    background: red;
+}
+
+.slider-green::-webkit-slider-thumb {
+    background: green;
+}
+
+.slider-blue::-webkit-slider-thumb {
+    background: blue;
+}
+
+/* Animación Cards */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
